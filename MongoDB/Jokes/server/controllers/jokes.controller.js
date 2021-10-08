@@ -1,6 +1,4 @@
-const { request } = require("express");
 const Joke = require("../models/jokes.model");
-const jokesRoutes = require("../routes/jokes.routes");
 
 const getAllJokes = (req, res) => {
     Joke.find()
