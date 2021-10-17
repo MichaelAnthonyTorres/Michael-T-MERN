@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from "axios";
 
-const Form = () => {
+const Form = (props) => {
+    const {hasBeenSubmitted, setHasBeenSubmitted} = props;
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
@@ -15,7 +16,13 @@ const Form = () => {
         };
         axios
             .post("http://localhost:8000/api/products", newProduct)
-            .then((response) => console.log(response))
+            .then((response) => {
+                console.log(response);
+                setTitle("");
+                setPrice("");
+                setDescription("");
+                setHasBeenSubmitted(!hasBeenSubmitted);
+            })
             .catch((err) => console.log(err));
     }
     
