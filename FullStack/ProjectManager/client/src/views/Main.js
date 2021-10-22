@@ -9,7 +9,7 @@ const Main = () => {
         <>
         <Form setHasBeenSubmitted={setHasBeenSubmitted} hasBeenSubmitted={hasBeenSubmitted} />
         <hr />
-        <List hasBeenSubmitted={hasBeenSubmitted}/>
+        <List setHasBeenSubmitted={setHasBeenSubmitted} hasBeenSubmitted={hasBeenSubmitted}/>
         </>
     ) ;
 }
