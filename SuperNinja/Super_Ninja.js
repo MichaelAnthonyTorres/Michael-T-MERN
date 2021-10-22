@@ -37,16 +37,16 @@ class Sensei extends Ninja {
 }
   
 
-const ninja1 = new Ninja("Bob", 10);
+const ninja1 = new Ninja("Michael", 10,10,12);
 ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
   
-const ninja2 = new Ninja("Billy", 20, 5, 7);
+const ninja2 = new Ninja("Ian", 20, 5, 7);
 ninja2.sayName();
 ninja2.showStats();
 ninja2.drinkSake();
   
-const sensei1 = new Sensei("Sensei Billy");
+const sensei1 = new Sensei("Sensei Ian");
 sensei1.showStats();
 sensei1.speakWisdom();
